@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SecGram — Защита вашей конфиденциальности</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+
+        /* Заголовок */
+        header {
+            background: linear-gradient(135deg, #007bff, #0056b3);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+        header img {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            max-height: 60px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* Анимация */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Основные заголовки */
+        h2 {
+            color: #0056b3;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .info-block {
+            background-color: white;
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .info-block:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .info-block p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Иконки */
+        .icon {
+            width: 35px;
+            height: 35px;
+            margin-right: 15px;
+            vertical-align: middle;
+        }
+
+        /* Кнопки */
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 1.1em;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+            width: auto;
+            max-width: 250px;
+            min-width: 180px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Подвал */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer a {
+            color: #ddd;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Мобильная адаптивность */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            .info-block {
+                padding: 20px;
+            }
+
+            .btn {
+                width: 90%;
+                font-size: 1.2em;
+            }
+        }
+
+        /* Фоны и декоративные элементы */
+        .background-gradient {
+            background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+            padding: 60px 0;
+            border-radius: 15px;
+            color: white;
+            text-align: center;
+        }
+
+        .background-gradient h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .background-gradient p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="./SecGramLogo.png" alt="SecGram Logo">
+    <h1>SecGram — Защита вашей конфиденциальности</h1>
+</header>
+
+<section>
+    <h2>О компании SecGram</h2>
+    <div class="info-block">
+        <p>SecGram — это компания, специализирующаяся на защите персональных данных и удалении утекших данных из публичных источников. Мы предоставляем инновационные решения для защиты вашей конфиденциальности в интернете, в том числе для защиты от утечек данных через OSINT-сервисы и другие небезопасные источники.</p>
+        <p>В современном мире защита данных является важнейшей частью безопасности. SecGram помогает вам вернуть контроль над вашей личной информацией и избежать дальнейших рисков.</p>
+    </div>
+
+    <h2>Основные угрозы утечек данных</h2>
+    <div class="info-block">
+        <h3><img class="icon" src="https://img.icons8.com/ios/50/000000/privacy-policy.png" alt="Data Threats">Утечка данных через соцсети</h3>
+        <p>Множество пользователей публикует личную информацию в социальных сетях, что может стать причиной множества угроз, включая кражу личных данных и мошенничество.</p>
+
+        <h3><img class="icon" src="https://img.icons8.com/ios/50/000000/password.png" alt="Password Leak">Взломы сервисов и утечка паролей</h3>
+        <p>Утечка данных из популярных сервисов может привести к серьезным последствиям для пользователей, включая кражу финансовых средств и репутации.</p>
+
+        <h3><img class="icon" src="https://img.icons8.com/ios/50/000000/phishing.png" alt="Phishing">Мошенничество и фишинг</h3>
+        <p>Фишинг-атаки могут привести к краже данных, таких как номера карт и личная информация, что может быть использовано для мошенничества.</p>
+    </div>
+
+    <h2>Как SecGram помогает вам?</h2>
+    <div class="info-block">
+        <h3><img class="icon" src="https://img.icons8.com/ios/50/000000/search.png" alt="Scanning">Автоматическое сканирование</h3>
+        <p>SecGram выполняет регулярное сканирование ваших данных на предмет утечек и компрометированных источников, используя множество публичных баз данных.</p>
+
+        <h3><img class="icon" src="https://img.icons8.com/ios/50/000000/delete-forever.png" alt="Deletion">Удаление данных</h3>
+        <p>Мы инициируем запросы на удаление ваших данных из небезопасных источников, таких как боты и публичные базы данных.</p>
+
+        <h3><img class="icon" src="https://img.icons8.com/ios/50/000000/lock.png" alt="Security">Защита от мошенничества</h3>
+        <p>Используя двухфакторную аутентификацию и безопасные методы авторизации, SecGram защищает вас от мошенников.</p>
+    </div>
+
+    <div class="background-gradient">
+        <h2>Начните использовать SecGram прямо сейчас</h2>
+        <p>Защитите свои данные, начав работу с SecGram. Просто авторизуйтесь через Telegram или номер телефона и получите результаты в кратчайшие сроки.</p>
+        <a href="https://t.me/SecGram_bot" class="btn">Начать защиту</a>
+    </div>
+</section>
+
+<div class="footer">
+    <p>© 2025 SecGram — Все права защищены</p>
+    <p><a href="#">Политика конфиденциальности</a> | <a href="#">Условия использования</a></p>
+</div>
+
+</body>
+</html>
